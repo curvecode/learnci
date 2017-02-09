@@ -5,4 +5,4 @@ class Pages extends CI_Controller {
         echo "Xin chao";
    }
 }
- ?>
+?>
