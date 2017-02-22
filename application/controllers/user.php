@@ -17,7 +17,7 @@ class User extends CI_Controller{
         echo "</pre>";
         echo $query->num_rows()." Users";
     }
-    public function insert(us, pwd, lv){
+    public function insert($us = "", $pwd = "", $lv = ""){
         $data=array(
             "username" => (string)us,
             "password" => (string)pwd,
