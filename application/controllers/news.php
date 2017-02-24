@@ -6,6 +6,9 @@ class News extends CI_Controller{
         $this->load->model('news_model');
         // Goi function trong model
         $news_list = $this->news_model->getList();
+        echo "<pre>";
+        print_r($news_list);
+        echo "</pre>";
     }
 }
 ?>

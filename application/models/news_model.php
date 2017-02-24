@@ -2,7 +2,11 @@
     class News_model extends CI_Model{
         public function getList()
         {
-            // code
+            $arr = array(
+                "name" => "thanh",
+                "age"  => "28"
+            );
+            return $arr;
         }
     }
 ?>

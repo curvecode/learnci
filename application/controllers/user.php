@@ -9,7 +9,7 @@ class User extends CI_Controller{
         $this->db->select("id, username, level");
         $this->db->order_by("username");
         $this->db->limit(10, 0);
-        $this->db->where("level >", "1");
+        $this->db->where("level >", "0");
         $query=$this->db->get("user");
         $data=$query->result_array();
         echo "<pre>";
