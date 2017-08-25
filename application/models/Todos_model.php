@@ -13,6 +13,9 @@ class Todos_model extends CI_Model {
         return $this->db->get("todos");
     }
 
+    /**
+     * Insert a todo element
+     **/
     public function insertTodo($data) {
         return $this->db->insert("todos", $data);
     }
