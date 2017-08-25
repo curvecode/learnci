@@ -5,6 +5,10 @@ class Todos_model extends CI_Model {
         $this->load->database();
     }
 
+    /**
+     * Add comment to function
+     * Get all todo list
+     **/
     public function getAllTodos() {
         return $this->db->get("todos");
     }
